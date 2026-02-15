@@ -80,7 +80,7 @@ export const resumeData: ResumeData = {
           en: "Applied first-principles analysis to glucose-control challenges and defined three HMW statements in a clear 'user + scenario + problem' framework."
         },
         {
-          zh: "项目在 XbotPark 冬令营结营仪式中获得二等奖。",
+          zh: "项目在 XbotPark 硬科技创业冬令营结营仪式中获得二等奖。",
           en: "The project won Second Prize at the XbotPark Winter Camp final ceremony."
         }
       ]
