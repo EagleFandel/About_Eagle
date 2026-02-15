@@ -32,7 +32,7 @@ export const resumeData: ResumeData = {
         zh: "核心奖项",
         en: "Major Awards"
       },
-      value: 6
+      value: 7
     },
     {
       id: "leadership",
@@ -48,10 +48,43 @@ export const resumeData: ResumeData = {
         zh: "代表项目",
         en: "Featured Projects"
       },
-      value: 6
+      value: 7
     }
   ],
   experiences: [
+    {
+      id: "xbotpark-winter-camp-2026",
+      org: {
+        zh: "XbotPark 机器人基地（东莞松山湖总部）",
+        en: "XbotPark Robotics Base (Dongguan Songshan Lake HQ)"
+      },
+      title: {
+        zh: "核心成员（希家云）",
+        en: "Core Team Member (Team Xijia Cloud)"
+      },
+      period: {
+        zh: "2026.01.26 - 2026.02.08",
+        en: "Jan 26, 2026 - Feb 8, 2026"
+      },
+      highlights: [
+        {
+          zh: "围绕大健康与血糖管理方向，完成对 20+ 糖尿病患者/控糖人群及 5+ 医师/专家的深度访谈与用户调研。",
+          en: "Focused on HealthTech and glucose management, conducting in-depth research with 20+ diabetes/glucose-control users and 5+ doctors/experts."
+        },
+        {
+          zh: "绘制目标人群用户旅程图，系统梳理办公场景下的监测、饮食、运动与睡眠关键触点。",
+          en: "Created user journey maps and structured key touchpoints across monitoring, diet, activity, and sleep in office-life scenarios."
+        },
+        {
+          zh: "基于第一性原理拆解控糖问题，提炼 3 条 HMW（How Might We）问题定义，形成“人群 + 场景 + 问题”框架。",
+          en: "Applied first-principles analysis to glucose-control challenges and defined three HMW statements in a clear 'user + scenario + problem' framework."
+        },
+        {
+          zh: "项目在 XbotPark 冬令营结营仪式中获得二等奖。",
+          en: "The project won Second Prize at the XbotPark Winter Camp final ceremony."
+        }
+      ]
+    },
     {
       id: "she-nicest",
       org: {
@@ -162,6 +195,44 @@ export const resumeData: ResumeData = {
     }
   ],
   projects: [
+    {
+      id: "xijiayun-glucose-management",
+      name: {
+        zh: "希家云｜二型“瘦糖”人群血糖管理方案",
+        en: "Xijia Cloud | Glucose Management for Lean Type-2 Users"
+      },
+      event: {
+        zh: "2026 XbotPark 硬科技创业冬令营（松山湖总部）",
+        en: "2026 XbotPark Hard-Tech Winter Entrepreneurship Camp"
+      },
+      period: {
+        zh: "2026.01.26 - 2026.02.08",
+        en: "Jan 26, 2026 - Feb 8, 2026"
+      },
+      role: {
+        zh: "核心成员｜用户研究与问题定义",
+        en: "Core Member | User Research & Problem Definition"
+      },
+      highlights: [
+        {
+          zh: "完成 20+ 用户与 5+ 医师/专家的深访，提炼二型“瘦糖”人群在办公场景中的核心控糖痛点。",
+          en: "Interviewed 20+ users and 5+ experts to identify core glucose-management pain points for lean type-2 users in office contexts."
+        },
+        {
+          zh: "基于用户旅程图拆解从起床到睡前的关键行为链路，定位监测、饮食、运动和睡眠之间的系统性矛盾。",
+          en: "Mapped day-long behavior journeys to surface systemic conflicts among monitoring, nutrition, exercise, and sleep."
+        },
+        {
+          zh: "提出 3 条 HMW 方向：办公时低负担增肌训练、餐后活动降糖效率提升、饮食碳水-蛋白质配比优化。",
+          en: "Defined three HMW tracks: low-friction muscle training at work, higher post-meal glucose-lowering efficiency, and better carb-protein intake optimization."
+        }
+      ],
+      stack: ["User Research", "Journey Mapping", "Problem Framing", "HealthTech"],
+      outcome: {
+        zh: "在 XbotPark 冬令营结营仪式获二等奖。",
+        en: "Won Second Prize at the XbotPark Winter Camp Final Demo."
+      }
+    },
     {
       id: "eth-adhd",
       name: {
@@ -377,6 +448,18 @@ export const resumeData: ResumeData = {
   ],
   awards: [
     {
+      id: "xbotpark-winter-camp-second-prize-2026",
+      year: "2026",
+      title: {
+        zh: "2026 XbotPark 硬科技创业冬令营",
+        en: "2026 XbotPark Hard-Tech Winter Entrepreneurship Camp"
+      },
+      detail: {
+        zh: "希家云（大健康·血糖管理）结营二等奖",
+        en: "Team Xijia Cloud (HealthTech Glucose Management) - Second Prize"
+      }
+    },
+    {
       id: "agent-young-dev",
       year: "2025",
       title: {
@@ -555,6 +638,6 @@ export const resumeData: ResumeData = {
       }
     }
   ],
-  updatedAt: "2026-02-12",
-  version: "Resume v2.0 Editorial"
+  updatedAt: "2026-02-15",
+  version: "Resume v2.1 Editorial"
 };
