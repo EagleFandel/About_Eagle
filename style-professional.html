@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>涓汉绠€鍘?- 涓撲笟椋庢牸</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Grande', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: #1a3a52;
+            color: white;
+            padding: 40px;
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .header .title {
+            font-size: 1.15em;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            color: #1a3a52;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #1a3a52;
+        }
+
+        .item-subtitle {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .item-date {
+            color: #999;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .item-description {
+            color: #555;
+            font-size: 0.95em;
+            margin-top: 6px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding: 0;
+            margin-top: 8px;
+        }
+
+        .achievements li {
+            padding-left: 20px;
+            margin-bottom: 6px;
+            font-size: 0.95em;
+            color: #555;
+            position: relative;
+        }
+
+        .achievements li:before {
+            content: "鈻?;
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-box {
+            background: #f9f9f9;
+            border-left: 4px solid #ff6b6b;
+            padding: 12px;
+            font-size: 0.95em;
+            font-weight: 600;
+            color: #1a3a52;
+            transition: all 0.3s ease;
+        }
+
+        .skill-box:hover {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>璧佃僵鐏?/h1>
+            <div class="title">鍏ㄦ爤寮€鍙?/ 鎶€鏈垱鏂?/ AR&AI 鐖卞ソ鑰?/div>
+                        <div class="contact-info">
+                <span>📧 quinceyleone41@gmail.com</span>
+                <span>📱 +86 18101645271</span>
+                <span>📍 上海，中国</span>
+                <span>🔗 <a href="https://github.com/EagleFandel" target="_blank" rel="noreferrer" style="color: #ffffff; text-decoration: underline;">github.com/EagleFandel</a></span>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title">涓汉绠€浠?/div>
+                <p style="color: #555; font-size: 0.95em; line-height: 1.7;">
+                    鐑埍鎶€鏈笌鍒涢€犵殑闈掑勾鏋佸锛屽枩娆㈢敤浠ｇ爜琛ㄨ揪鍒涙剰銆佹帰绱㈡湭鐭ャ€備笓娉ㄤ簬鍏ㄦ爤寮€鍙戙€丄I搴旂敤钀藉湴鍙婅蒋纭欢铻嶅悎鍒涙柊銆俁okid鏍″洯澶т娇锛屽叿澶囧己鐑堢殑鎶€鏈儹鎯呬笌鍒涙柊鎬濈淮銆傜啛缁冩帉鎻ython銆丆/C++銆丣avaScript绛夌紪绋嬭瑷€锛屽AI Agent绯荤粺璁捐涓嶯ext.js鍏ㄦ爤寮€鍙戞湁娣卞叆瀹炶返銆傜Н鏋佸弬涓庨粦瀹㈡澗鍙婂紑婧愮ぞ鍖哄缓璁撅紝鎿呴暱鍥㈤槦鍗忎綔锛屽杽浜庡埄鐢ㄥ墠娌挎妧鏈紙AR/XR/AI/宓屽叆寮忥級瑙ｅ喅瀹為檯闂锛屽娆″湪纭欢涓庡垱鎰忕紪绋嬫瘮璧涗腑鑾峰銆?                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">涓昏缁忓巻</div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">鑱斿悎鍒涘浜?/div>
+                            <div class="item-subtitle">She Nicest - 闈㈠悜濂虫€х殑绉戞妧鍒涙柊榛戝鏉俱€佸伐浣滃潑涓庡睍浼?/div>
+                        </div>
+                        <div class="item-date">2025骞?2鏈?- 鑷充粖</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>鑱斿悎鍒涘姙棰勮1000+浜哄弬涓庣殑澶у瀷绀句細鍒涙柊榛戝鏉炬椿鍔紝鑱氱劍濂虫€у湪绉戞妧棰嗗煙鐨勫弬涓庝笌鍒涙柊</li>
+                        <li>绛栧垝骞剁粍缁囬鐑伐浣滃潑涓嶮ini榛戝鏉剧郴鍒楁椿鍔紝鎺ㄥ姩绉戞妧鏅儬涓庢妧鏈钩鏉?/li>
+                        <li>璐熻矗娲诲姩鏁翠綋瑙勫垝銆佸鑱斿悎浣滀笌绀惧尯寤鸿锛屽缓绔嬪鍏冨垱鏂扮殑绉戞妧鍒涢€犲钩鍙?/li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">CTO / 鑱斿悎鍒涘浜?/div>
+                            <div class="item-subtitle">Jiancareer绠€鑱?- 鏂颁竴浠ｈ亴涓氭櫤鑳藉鑸钩鍙?/div>
+                        </div>
+                        <div class="item-date">2025骞?鏈?- 鑷充粖</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>棰嗗鎶€鏈洟闃熷紑鍙戣亴涓氬鑸钩鍙帮紝鑾稺aytoAGI榛戝鏉句竴绛夊</li>
+                        <li>璁捐骞跺疄鐜癆I agent绯荤粺锛屾檵绾I agent 2025鍗婂喅璧?/li>
+                        <li>璐熻矗鍏ㄦ爤鏋舵瀯璁捐涓庢牳蹇冨姛鑳藉紑鍙?/li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Rokid鏍″洯澶т娇</div>
+                            <div class="item-subtitle">Rokid - 绌洪棿璁＄畻棰嗗煙棰嗗鑰?/div>
+                        </div>
+                        <div class="item-date">2025骞?鏈?- 2026骞?鏈?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>鎺ㄥ箍Rokid AR/XR鎶€鏈湪鏁欒偛鍜屽垱鎰忛鍩熺殑搴旂敤</li>
+                        <li>鍙備笌鎶€鏈ぞ鍖哄缓璁句笌鐢熸€佸悎浣?/li>
+                        <li>鎸囧瀛︾敓鍙備笌鍒涙柊椤圭洰瀹炶返</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">openKylin绀惧尯鎴愬憳 & 鎺ㄥ箍澶т娇</div>
+                            <div class="item-subtitle">0penAtom openKylin - 寮€婧愭搷浣滅郴缁?/div>
+                        </div>
+                        <div class="item-date">2025骞?鏈?- 2026骞?鏈?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>鍙備笌寮€婧愮ぞ鍖哄缓璁句笌鎶€鏈帹骞?/li>
+                        <li>璐＄尞寮€婧愰」鐩紝鎺ㄥ姩鍥戒骇鎿嶄綔绯荤粺鍙戝睍</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div>
+                    <div class="section">
+                        <div class="section-title">鏁欒偛鑳屾櫙</div>
+                        <div class="item">
+                            <div class="item-title">楂樹腑鍦ㄨ</div>
+                            <div class="item-subtitle">涓婃捣甯?/div>
+                            <div class="item-description">涓撴敞浜庤绠楁満绉戝涓庡垱鏂板疄璺?/div>
+                        </div>
+                        <div class="item" style="margin-top: 15px;">
+                            <div class="item-title">4bit璁＄畻鏈哄埗浣?/div>
+                            <div class="item-subtitle">鍗庝笢甯堣寖澶у璁＄畻鏈哄闄㈠疄璺靛伐浣滅珯浼樼瀛﹀憳 - 纭欢瀹炶返</div>
+                            <div class="item-date">2025骞?鏈?- 2025骞?2鏈?/div>
+                            <div class="item-description">鍦ㄩ偟闈炶€佸笀鎸囧涓嬶紝鐙珛瀹屾垚TD4璁＄畻鏈虹殑鍒朵綔涓庤皟璇?/div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <div class="section-title">涓昏濂栭」</div>
+                        <ul class="achievements">
+                            <li>Ai agent2025缁勫浼?- 銆婄畝鑱屻€嬩紭绉€00鍚庡紑鍙戣€呭椤?/li>
+                            <li>REBUILD-Z 2025纭欢榛戝鏉?- 銆婇粯璇箣妗ャ€婣I+纭欢鏂瑰悜涓€绛夊</li>
+                            <li>REBUILD-Z 2025纭欢榛戝鏉?- 銆婅穬鍔ㄦ満鐏点€嬫灦鏋勫笀鏂瑰悜涓夌瓑濂?/li>
+                            <li>WorldRemix XR 2025 Hackathon - 銆婂柕鍠电惔銆嬫€昏禌閬撶涓€鍚?/li>
+                            <li>GOGC 2024鍏ㄧ悆寮€婧愭瀬瀹㈠槈骞村崕 - 銆婃枃鐗╂帰绉樸€嬫渶浣冲疄璺靛</li>
+                            <li>绗崄鍥涘眾钃濇ˉ鏉?- Python涓骇鍒涙剰缂栫▼缁勪簩绛夊</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">鎶€鑳戒笌涓撻暱</div>
+                <div class="skills-grid">
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">C/C++</div>
+                    <div class="skill-box">JavaScript</div>
+                    <div class="skill-box">AI/ML</div>
+                    <div class="skill-box">AR/XR</div>
+                    <div class="skill-box">Unity</div>
+                    <div class="skill-box">鍏ㄦ爤寮€鍙?/div>
+                    <div class="skill-box">React</div>
+                    <div class="skill-box">Next.js</div>
+                    <div class="skill-box">鏁版嵁搴?/div>
+                    <div class="skill-box">Linux</div>
+                    <div class="skill-box">缃戠粶瀹夊叏</div>
+                    <div class="skill-box">浜戣绠?/div>
+                    <div class="skill-box">宓屽叆寮忓紑鍙?/div>
+                    <div class="skill-box">Git</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">浠ｈ〃椤圭洰</div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">ETH榛戝鏉?- ADHD娌荤枟Web3搴旂敤</div>
+                            <div class="item-subtitle">ETH Hackathon 2025</div>
+                        </div>
+                        <div class="item-date">2025骞?0鏈?8鏃?21鏃?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>璁捐骞跺紑鍙戝熀浜庡尯鍧楅摼鐨凙DHD娌荤枟婵€鍔辩郴缁?/li>
+                        <li>鍒╃敤鏅鸿兘鍚堢害瀹炵幇鐢ㄦ埛琛屼负杩借釜涓庡鍔辨満鍒?/li>
+                        <li>鏁村悎Web3鎶€鏈笌鍖荤枟鍋ュ悍搴旂敤锛屾帰绱㈠尯鍧楅摼鍦ㄥ尰鐤楅鍩熺殑鍒涙柊搴旂敤</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">銆婂柕鍠电惔銆? XR&AI闊充箰浜や簰椤圭洰</div>
+                            <div class="item-subtitle">WorldRemix XR 2025 Hackathon 路 涓婃捣绔?/div>
+                        </div>
+                        <div class="item-date">2025骞?鏈?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>浣跨敤Apple Vision Pro涓嶶nity寮€鍙戣瀺鍚圶R涓庨煶涔愪綋楠岀殑鍒涙柊椤圭洰</li>
+                        <li>鍒╃敤Unity寮€鍙戦煶棰戣浆鍏煶闃朵氦浜掔郴缁燂紝涓诲鏍稿績閫昏緫涓庝氦浜掕璁?/li>
+                        <li>鑾峰緱鎬昏禌閬撶涓€鍚?/li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">銆婇粯璇箣妗ャ€? AI+纭欢鍏泭骞冲彴</div>
+                            <div class="item-subtitle">REBUILD-Z 2025纭欢榛戝鏉?/div>
+                        </div>
+                        <div class="item-date">2025骞?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>璁捐鍥介檯鎵嬭鏁欏骞冲彴锛岃瀺鍚圓I璇嗗埆涓庣‖浠朵氦浜?/li>
+                        <li>鑾稟I+纭欢鏂瑰悜涓€绛夊</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">銆婅穬鍔ㄦ満鐏点€? 鍏冻鏈哄櫒浜哄紑婧愬钩鍙?/div>
+                            <div class="item-subtitle">REBUILD-Z 2025纭欢榛戝鏉?路 鏋舵瀯甯堟柟鍚戜笁绛夊</div>
+                        </div>
+                        <div class="item-date">2025骞?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>璐熻矗鏍稿績鍥轰欢涓庢鎬佺畻娉曞紑鍙戯紝瀹炵幇Tripod/Ripple绛夊绉嶇ǔ瀹氭鎬佸強鍔ㄤ綔閿氬畾浣撶郴</li>
+                        <li>璁捐鍒嗗眰瑙ｈ€︾郴缁熸灦鏋勶紝鏁村悎BLE閫氫俊涓庣渚ц闊充氦浜掞紝瑙ｅ喅澶氳埖鏈哄悓姝ヤ笌鎶栧姩闂</li>
+                        <li>瀹屾垚PCB鐒婃帴涓庤皟璇曪紝寤虹珛鍏ㄩ摼璺紑婧愭枃妗ｏ紝鎵撻€犱綆鎴愭湰鍙鐜扮殑鏈哄櫒浜烘暀瀛﹀钩鍙?/li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">銆婃枃鐗╂帰绉樸€? AR&AI鏂囩墿璇嗗埆绯荤粺</div>
+                            <div class="item-subtitle">GOGC 2024鍏ㄧ悆寮€婧愭瀬瀹㈠槈骞村崕闈掑勾榛戝鏉?/div>
+                        </div>
+                        <div class="item-date">2024骞?鏈?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>浣跨敤Rokid Station Pro涓嶶nity/C#鏋勫缓鏂囩墿AI璇嗗埆涓嶢R璁茶В绯荤粺</li>
+                        <li>鑾锋渶浣冲疄璺靛锛岄」鐩垱鎰忓凡鐢盧okid浼樺寲骞跺湪涓婃捣鍗氱墿棣嗚惤鍦板疄璺?/li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">涓汉鎶€鏈崥瀹笌鏍″洯璁告効澧?/div>
+                            <div class="item-subtitle">鏈嶅姟鍣ㄦ惌寤轰笌Web寮€鍙?/div>
+                        </div>
+                        <div class="item-date">2021骞?/div>
+                    </div>
+                    <ul class="achievements">
+                        <li>鐙珛瀹屾垚鏈嶅姟鍣ㄩ儴缃诧紙瀹濆绯荤粺锛夛紝缁戝畾涓汉鍩熷悕</li>
+                        <li>鍩轰簬WordPress鎼缓骞剁淮鎶や釜浜烘妧鏈崥瀹㈠強鏍″洯浜掑姩骞冲彴</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">璇█鑳藉姏</div>
+                <ul class="achievements">
+                    <li>涓枃 - 姣嶈</li>
+                    <li>鑻辨枃 - 楂樼骇</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

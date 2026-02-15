@@ -1,0 +1,654 @@
+.resumeRoot {
+  --resume-bg: #f2f4f6;
+  --resume-paper: #ffffff;
+  --resume-ink: #0f1a24;
+  --resume-ink-soft: #445868;
+  --resume-line: #c8d1d9;
+  --resume-accent: #205d7d;
+  --resume-accent-soft: #5e7a8d;
+  --resume-glow: rgba(32, 93, 125, 0.14);
+  min-height: 100vh;
+  padding: 3rem 0 4rem;
+  color: var(--resume-ink);
+  font-family: var(--resume-serif), "Noto Serif SC", serif;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(94, 122, 141, 0.18), transparent 34%),
+    radial-gradient(circle at 86% 10%, rgba(32, 93, 125, 0.14), transparent 32%),
+    linear-gradient(140deg, #eceff2 0%, #f2f4f6 45%, #eaedf1 100%);
+}
+
+.resumeCanvas {
+  width: min(1120px, calc(100% - 2.2rem));
+  margin: 0 auto;
+  border: 1px solid var(--resume-line);
+  background: var(--resume-paper);
+  box-shadow:
+    0 22px 60px rgba(13, 33, 48, 0.14),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.resumeCanvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(128, 145, 158, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 145, 158, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.header,
+.summarySection,
+.section,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  padding: 2rem 2.2rem 1.7rem;
+  border-bottom: 1px solid var(--resume-line);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.homeLink {
+  display: inline-block;
+  border: 1px solid var(--resume-line);
+  padding: 0.46rem 0.7rem;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--resume-accent-soft);
+}
+
+.controls {
+  display: flex;
+  gap: 0.42rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.controlGroup {
+  display: inline-flex;
+  border: 1px solid var(--resume-line);
+  background: #f8f9fa;
+}
+
+.controlButton,
+.controlActive,
+.printButton {
+  border: none;
+  background: transparent;
+  color: var(--resume-accent-soft);
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+}
+
+.controlActive {
+  background: var(--resume-accent);
+  color: #f8fbfd;
+}
+
+.printButton {
+  border: 1px solid var(--resume-line);
+  background: #f8f9fa;
+}
+
+.identityWrap {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.avatarWrap {
+  width: 140px;
+  height: 140px;
+  border: 1px solid var(--resume-line);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #dde5eb, #f4f8fa);
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.avatarFallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 0.3rem;
+  text-align: center;
+  color: var(--resume-accent-soft);
+  z-index: 1;
+}
+
+.avatarFallback span {
+  font-family: var(--resume-display), "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.avatarFallback p {
+  margin: 0;
+  font-size: 0.66rem;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
+.identityMain h1 {
+  margin: 0;
+  font-family: var(--resume-display), "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 0.94;
+}
+
+.identityMain h2 {
+  margin: 0.45rem 0 0;
+  font-size: clamp(0.98rem, 1.6vw, 1.22rem);
+  font-weight: 500;
+  color: var(--resume-ink-soft);
+}
+
+.kicker {
+  margin: 0 0 0.55rem;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--resume-accent-soft);
+}
+
+.contactLine {
+  margin: 0.85rem 0 0;
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  color: var(--resume-accent-soft);
+}
+
+.summarySection,
+.section {
+  padding: 1.6rem 2.2rem;
+  border-bottom: 1px solid var(--resume-line);
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.78rem;
+  margin-bottom: 1rem;
+}
+
+.sectionIndex {
+  margin: 0;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--resume-accent-soft);
+}
+
+.sectionHeading h3 {
+  margin: 0;
+  font-family: var(--resume-display), "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 2.4vw, 2.06rem);
+  line-height: 1.08;
+}
+
+.summaryText {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.86;
+  color: var(--resume-ink-soft);
+  max-width: 72ch;
+}
+
+.experienceList,
+.projectList {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.experienceCard,
+.projectCard,
+.skillCard,
+.eduCard,
+.languageCard,
+.timelineItem,
+.metricCard {
+  border: 1px solid var(--resume-line);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 30px var(--resume-glow);
+  break-inside: avoid;
+}
+
+.experienceCard,
+.projectCard,
+.eduCard {
+  padding: 0.92rem 1rem 1rem;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.orgName {
+  margin: 0;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--resume-accent-soft);
+}
+
+.cardHead h4 {
+  margin: 0.35rem 0 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.periodTag {
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.71rem;
+  color: var(--resume-accent-soft);
+}
+
+.experienceCard ul,
+.projectCard ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.38rem;
+}
+
+.experienceCard li,
+.projectCard li {
+  font-size: 0.93rem;
+  line-height: 1.64;
+  color: var(--resume-ink-soft);
+}
+
+.projectRole {
+  margin: 0.72rem 0 0;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  color: var(--resume-accent);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+}
+
+.stackLine {
+  margin-top: 0.78rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.44rem;
+}
+
+.stackLine span {
+  border: 1px solid var(--resume-line);
+  padding: 0.24rem 0.44rem;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.07em;
+  color: var(--resume-accent-soft);
+  background: #f9fbfc;
+}
+
+.outcome {
+  margin: 0.74rem 0 0;
+  font-size: 0.9rem;
+  color: var(--resume-ink-soft);
+}
+
+.awardsLayout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 0.92rem;
+}
+
+.metricsRow {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.metricCard {
+  padding: 0.9rem 1rem;
+}
+
+.metricValue {
+  margin: 0;
+  font-family: var(--resume-display), "Cormorant Garamond", serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.metricLabel {
+  margin: 0.45rem 0 0;
+  color: var(--resume-ink-soft);
+  font-size: 0.86rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timelineItem {
+  padding: 0.84rem 0.95rem;
+}
+
+.timelineYear {
+  margin: 0;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: var(--resume-accent);
+}
+
+.timelineItem h4 {
+  margin: 0.35rem 0 0;
+  font-size: 0.98rem;
+}
+
+.timelineItem p {
+  margin: 0.32rem 0 0;
+  color: var(--resume-ink-soft);
+  line-height: 1.52;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.84rem;
+}
+
+.skillCard {
+  padding: 0.84rem 0.92rem;
+}
+
+.skillCard h4 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.skillCard ul {
+  list-style: none;
+  margin: 0.66rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.46rem;
+}
+
+.skillCard li {
+  border: 1px solid var(--resume-line);
+  padding: 0.2rem 0.4rem;
+  font-size: 0.71rem;
+  background: #f8fbfd;
+  color: var(--resume-ink-soft);
+}
+
+.eduGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 0.84rem;
+}
+
+.eduList {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.eduDetail {
+  margin: 0.72rem 0 0;
+  color: var(--resume-ink-soft);
+}
+
+.languageCard {
+  padding: 0.9rem;
+}
+
+.languageCard h4 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.languageCard ul {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.languageCard li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  border-bottom: 1px dashed var(--resume-line);
+  padding-bottom: 0.46rem;
+  font-size: 0.9rem;
+  color: var(--resume-ink-soft);
+}
+
+.languageCard strong {
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--resume-accent-soft);
+  text-transform: uppercase;
+}
+
+.footer {
+  padding: 1.2rem 2.2rem 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--resume-accent-soft);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.atsMode {
+  background: #f7f8f9;
+}
+
+.atsMode .resumeCanvas {
+  box-shadow: none;
+}
+
+.atsMode .resumeCanvas::before {
+  display: none;
+}
+
+.atsMode .experienceCard,
+.atsMode .projectCard,
+.atsMode .skillCard,
+.atsMode .eduCard,
+.atsMode .languageCard,
+.atsMode .timelineItem,
+.atsMode .metricCard {
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.atsMode .summaryText {
+  font-size: 0.98rem;
+}
+
+.atsMode .stackLine span {
+  background: #ffffff;
+}
+
+.atsMode .metricValue {
+  font-family: var(--resume-mono), "IBM Plex Mono", monospace;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 920px) {
+  .resumeRoot {
+    padding: 1.4rem 0 2.4rem;
+  }
+
+  .resumeCanvas {
+    width: min(1120px, calc(100% - 1rem));
+  }
+
+  .header,
+  .summarySection,
+  .section,
+  .footer {
+    padding-inline: 1rem;
+  }
+
+  .identityWrap {
+    grid-template-columns: 1fr;
+  }
+
+  .avatarWrap {
+    width: 112px;
+    height: 112px;
+  }
+
+  .headerTop {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls {
+    justify-content: flex-start;
+  }
+
+  .awardsLayout,
+  .eduGrid,
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactLine {
+    gap: 0.32rem;
+  }
+
+  .contactLine span {
+    display: none;
+  }
+}
+
+@media print {
+  .resumeRoot {
+    background: #ffffff;
+    padding: 0;
+    color: #000000;
+  }
+
+  .resumeCanvas {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+
+  .resumeCanvas::before {
+    display: none;
+  }
+
+  .resumeRoot [data-print-hidden] {
+    display: none !important;
+  }
+
+  .header,
+  .summarySection,
+  .section,
+  .footer {
+    padding: 0.6rem 0.7rem;
+    border-bottom: 1px solid #d7d7d7;
+    page-break-inside: avoid;
+  }
+
+  .summaryText,
+  .experienceCard li,
+  .projectCard li,
+  .timelineItem p,
+  .eduDetail {
+    color: #111111;
+  }
+
+  .experienceCard,
+  .projectCard,
+  .skillCard,
+  .eduCard,
+  .languageCard,
+  .timelineItem,
+  .metricCard {
+    border: 1px solid #d2d2d2;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  .awardsLayout,
+  .skillGrid,
+  .eduGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectCard,
+  .experienceCard,
+  .timelineItem,
+  .eduCard {
+    page-break-inside: avoid;
+  }
+
+  .footer {
+    border-bottom: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resumeRoot * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
