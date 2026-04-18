@@ -12,7 +12,7 @@ export async function GET() {
     <ResumePDF data={resumeData} locale={locale} />
   );
 
-  return new NextResponse(pdfBuffer, {
+  return new NextResponse(new Uint8Array(pdfBuffer), {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition": "inline; filename=\"resume.pdf\"",
