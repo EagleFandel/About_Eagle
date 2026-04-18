@@ -6,12 +6,12 @@ export const profile = {
     en: "Xuancan Zhao"
   } satisfies LocalizedText,
   headline: {
-    zh: "硬核工程师 / 技术型创新创始人",
-    en: "Hardcore Engineer / Technical Innovation Founder"
+    zh: "AI Native 创始人 / 产品工程师 / 0→1 创业者",
+    en: "AI Native Founder / Product Engineer / Zero-to-One Builder"
   } satisfies LocalizedText,
   statement: {
-    zh: "我构建 AI Agent、XR 交互和全栈产品，把创意快速转化为可运行的系统。",
-    en: "I build AI agent systems, XR interactions, and full-stack products that turn ideas into working systems fast."
+    zh: "我联合发起了全国规模最大的女性黑客松 She Nicest，曾任简职 CTO，参与 XbotPark 硬科技创业孵化。追求：具身智能、AGI、超语言表达系统。",
+    en: "Co-founded China's largest women's hackathon brand, former CTO of Jiancareer, XbotPark explorer. Pursuing: embodied AI, AGI, and foundational language systems."
   } satisfies LocalizedText,
   intro: {
     zh: "从黑客松到真实场景落地，我持续用工程能力、产品视角和社区组织力推动技术创新。",
@@ -24,69 +24,69 @@ export const profile = {
   email: "quinceyleone41@gmail.com",
   github: "https://github.com/EagleFandel",
   identityTags: [
-    "AI Agent Systems",
-    "XR Interactive Computing",
-    "Full-Stack Product Engineering",
-    "Hackathon-Proven Builder"
+    "AI Native Founder",
+    "Zero-to-One Builder",
+    "Hackathon Champion",
+    "Community Organizer"
   ],
   capabilityClusters: [
     {
-      id: "core-stack",
+      id: "software",
       label: {
-        zh: "核心工程栈",
-        en: "Core Engineering Stack"
+        zh: "软件工程",
+        en: "Software Engineering"
       } satisfies LocalizedText,
       items: ["Python", "C/C++", "TypeScript", "Next.js", "React"]
     },
     {
-      id: "intelligence",
+      id: "ai",
       label: {
-        zh: "智能系统",
-        en: "Intelligent Systems"
+        zh: "AI 与智能体",
+        en: "AI & Agents"
       } satisfies LocalizedText,
-      items: ["AI Agent", "ML", "PromptOps", "Data Pipelines"]
+      items: ["AI Agent Design", "RAG", "MCP", "Multi-Agent", "Prompt Engineering"]
     },
     {
-      id: "spatial",
+      id: "xr",
       label: {
-        zh: "空间与交互",
-        en: "Spatial & Interaction"
+        zh: "XR 与交互",
+        en: "XR & Interaction"
       } satisfies LocalizedText,
-      items: ["AR/XR", "Unity", "Vision Pro", "Sensor Interaction"]
+      items: ["AR/XR", "Unity", "Vision Pro", "Interactive Prototyping"]
     },
     {
       id: "hardware",
       label: {
-        zh: "硬件系统",
-        en: "Hardware Systems"
+        zh: "硬件与系统",
+        en: "Hardware & Systems"
       } satisfies LocalizedText,
       items: ["Embedded", "BLE", "Firmware", "PCB Debugging"]
     }
   ],
   metrics: [
     {
+      id: "community",
+      label: {
+        zh: "开发者社区",
+        en: "Developer Community"
+      } satisfies LocalizedText,
+      value: 1000
+    },
+    {
+      id: "hackathons",
+      label: {
+        zh: "黑客松落地",
+        en: "Hackathons Executed"
+      } satisfies LocalizedText,
+      value: 3
+    },
+    {
       id: "awards",
       label: {
-        zh: "竞赛与奖项",
-        en: "Awards & Rankings"
+        zh: "核心奖项",
+        en: "Major Awards"
       } satisfies LocalizedText,
-      value: 12
-    },
-    {
-      id: "projects",
-      label: {
-        zh: "已交付项目",
-        en: "Shipped Projects"
-      } satisfies LocalizedText,
-      value: 20
-    },
-    {
-      id: "roles",
-      label: {
-        zh: "核心角色",
-        en: "Leadership Roles"
-      } satisfies LocalizedText,
-      value: 4
+      value: 7
     }
   ],
   ctaLine: {

@@ -1,0 +1,15 @@
+
+> about_me@1.0.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+
+✓ Starting...
+✓ Ready in 2.5s
+ GET / 200 in 1094ms (compile: 487ms, render: 607ms)
+○ Compiling /resume ...
+ GET /resume 200 in 102ms (compile: 7ms, render: 95ms)
+ GET /resume?lang=en 200 in 341ms (compile: 159ms, render: 182ms)
+ GET /resume?lang=zh 200 in 125ms (compile: 11ms, render: 115ms)
