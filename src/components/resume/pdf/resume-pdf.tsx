@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Font,
 } from "@react-pdf/renderer";
-import type { ResumeData, ResumeLocale } from "@/types/resume";
+import type { ResumeData, ResumeLocale, ResumeText } from "@/types/resume";
 
 Font.register({
   family: "NotoSansSC",
