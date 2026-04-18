@@ -207,6 +207,12 @@
   margin-bottom: 1rem;
 }
 
+.projectCard + .sectionHeading {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--resume-line);
+}
+
 .sectionIndex {
   margin: 0;
   font-family: var(--resume-mono), "IBM Plex Mono", monospace;

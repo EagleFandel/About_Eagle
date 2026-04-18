@@ -13,6 +13,7 @@ export interface ResumeBasics {
   summary: ResumeText;
   location: ResumeText;
   email: string;
+  email2?: string;
   phone: string;
   github: string;
   avatarPath: string;
@@ -28,6 +29,7 @@ export interface ResumeExperienceItem {
 
 export interface ResumeProjectItem {
   id: string;
+  section?: string;
   name: ResumeText;
   event: ResumeText;
   period: ResumeText;

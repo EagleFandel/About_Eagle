@@ -14,7 +14,7 @@ export const AwardsSection = ({ locale, mode, awards, metrics }: AwardsSectionPr
   return (
     <section className={styles.section} data-animate="section">
       <div className={styles.sectionHeading}>
-        <p className={styles.sectionIndex}>03</p>
+        <p className={styles.sectionIndex}>04</p>
         <h3>{locale === "zh" ? "奖项与影响力" : "Awards & Impact"}</h3>
       </div>
       <div className={styles.awardsLayout}>

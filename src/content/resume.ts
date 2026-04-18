@@ -9,23 +9,40 @@ export const resumeData: ResumeData = {
       en: "Xuancan Zhao"
     },
     headline: {
-      zh: "全栈工程师 / 技术创新创始人 / AI & XR 实践者",
-      en: "Full-Stack Engineer / Innovation Founder / AI & XR Builder"
+      zh: "AI Native Founder / Product Engineer / Zero-to-One Builder",
+      en: "AI Native Founder / Product Engineer / Zero-to-One Builder"
     },
     summary: {
-      zh: "我专注于 AI Agent、XR 交互和软硬件融合系统，擅长将创意在高压周期内转化为可交付产品。过去两年中，我持续在黑客松、开源社区与真实场景中完成从系统设计到落地验证的全链路实践，并获得多项技术竞赛奖项。",
-      en: "I focus on AI agents, XR interaction, and hardware-software integrated systems. I specialize in turning ambitious ideas into production-ready prototypes under tight timelines. Across hackathons, open-source communities, and real deployments, I have repeatedly delivered end-to-end technical execution and won multiple innovation awards."
+      zh: "AI Native 青年极客，坚信 Build in Public 与终生学习。我联合发起了全国规模最大的女性黑客松 She Nicest（她构未来），已在上海、北京、深圳落地多场百人活动并构建千人开发者社区。曾任简职 CTO，参与词灵等 AI Agent 项目技术开发。探索方向：具身智能、通用人工智能、脑机接口、语言的底层重构与超语言表达系统。追求成为超级个体，打通创业全链路（技术、产品、市场）。",
+      en: "AI Native young builder passionate about Build in Public and lifelong learning. Co-founded She Nicest, China's largest women's hackathon brand with 1,000+ developer community. Former CTO of JianCareer, contributed to AI agent projects like Cling. Exploring embodied AI, AGI, brain-computer interfaces, and foundational language restructuring beyond linear text. Aspiring to become a super-individual with full-stack entrepreneurship skills across technology, product, and market."
     },
     location: {
       zh: "上海，中国",
       en: "Shanghai, China"
     },
     email: "quinceyleone41@gmail.com",
+    email2: "2170257193@qq.com",
     phone: "+86 18101645271",
     github: "https://github.com/EagleFandel",
     avatarPath: "/images/avatar.jpg"
   },
   impactMetrics: [
+    {
+      id: "community",
+      label: {
+        zh: "开发者社区",
+        en: "Developer Community"
+      },
+      value: 1000
+    },
+    {
+      id: "hackathons",
+      label: {
+        zh: "黑客松落地",
+        en: "Hackathons Executed"
+      },
+      value: 3
+    },
     {
       id: "awards",
       label: {
@@ -41,59 +58,47 @@ export const resumeData: ResumeData = {
         en: "Leadership Roles"
       },
       value: 4
-    },
-    {
-      id: "featured-projects",
-      label: {
-        zh: "代表项目",
-        en: "Featured Projects"
-      },
-      value: 7
     }
   ],
   experiences: [
     {
-      id: "xbotpark-winter-camp-2026",
+      id: "xbotpark-project",
       org: {
-        zh: "XbotPark 机器人基地（东莞松山湖总部）",
-        en: "XbotPark Robotics Base (Dongguan Songshan Lake HQ)"
+        zh: "XbotPark 松山湖国际机器人研究院",
+        en: "XbotPark Robotics Base"
       },
       title: {
-        zh: "核心成员（希家云）",
-        en: "Core Team Member (Team Xijia Cloud)"
+        zh: "创业探索成员",
+        en: "Entrepreneurship Explorer"
       },
       period: {
-        zh: "2026.01.26 - 2026.02.08",
-        en: "Jan 26, 2026 - Feb 8, 2026"
+        zh: "2026.01 - 至今",
+        en: "Jan 2026 - Present"
       },
       highlights: [
         {
-          zh: "围绕大健康与血糖管理方向，完成对 20+ 糖尿病患者/控糖人群及 5+ 医师/专家的深度访谈与用户调研。",
-          en: "Focused on HealthTech and glucose management, conducting in-depth research with 20+ diabetes/glucose-control users and 5+ doctors/experts."
+          zh: "入选李泽湘教授创办的 XbotPark 创业体系，参与硬件创业项目孵化。",
+          en: "Selected into Professor Li Zexiang's XbotPark entrepreneurship program, participating in hardware startup incubation."
         },
         {
-          zh: "绘制目标人群用户旅程图，系统梳理办公场景下的监测、饮食、运动与睡眠关键触点。",
-          en: "Created user journey maps and structured key touchpoints across monitoring, diet, activity, and sleep in office-life scenarios."
+          zh: "负责从用户需求调研、产品定义、原型验证到市场测试的 0→1 全流程探索。",
+          en: "Led full-cycle 0→1 exploration from user research and product definition to prototyping and market validation."
         },
         {
-          zh: "基于第一性原理拆解控糖问题，提炼 3 条 HMW（How Might We）问题定义，形成“人群 + 场景 + 问题”框架。",
-          en: "Applied first-principles analysis to glucose-control challenges and defined three HMW statements in a clear 'user + scenario + problem' framework."
-        },
-        {
-          zh: "项目在 XbotPark 硬科技创业冬令营结营仪式中获得二等奖。",
-          en: "The project won Second Prize at the XbotPark Winter Camp final ceremony."
+          zh: "参与供应链对接、产品迭代与商业化路径验证。",
+          en: "Contributed to supply chain coordination, product iteration, and commercialization pathway validation."
         }
       ]
     },
     {
       id: "she-nicest",
       org: {
-        zh: "She Nicest",
-        en: "She Nicest"
+        zh: "SHE NICEST 她构未来",
+        en: "SHE NICEST"
       },
       title: {
-        zh: "联合创始人",
-        en: "Co-Founder"
+        zh: "联合创始人 / 技术主创",
+        en: "Co-Founder / Technical Lead"
       },
       period: {
         zh: "2025.12 - 至今",
@@ -101,16 +106,20 @@ export const resumeData: ResumeData = {
       },
       highlights: [
         {
-          zh: "联合创办预计 1000+ 人参与的社会创新黑客松与科技展会，聚焦女性科技参与和技术共创。",
-          en: "Co-founded a large-scale social innovation hackathon and expo expected to host 1,000+ participants, focused on women in technology."
+          zh: "作为首个「Z世代+女性主体+科技创造」黑客松厂牌联合创始人，过去一年落地3场大型女性黑客松（上海、北京、深圳）+ 4场技术工作坊，2100+人报名、500+人实际参与、300+可演示项目。",
+          en: "As co-founder of the first hackathon brand focused on Gen-Z women in tech, helped execute 3 large-scale hackathons (Shanghai, Beijing, Shenzhen) and 4 workshops with 2,100+ sign-ups, 500+ participants, and 300+ demo projects."
         },
         {
-          zh: "策划并执行工作坊与 Mini Hackathon 系列，构建活动预热与社区沉淀机制。",
-          en: "Designed and executed workshop and mini-hackathon programs to build sustained community engagement."
+          zh: "负责黑客松与技术工作坊的策划统筹，担任技术工作坊导师，涵盖赛事规则设计、协作生态搭建与现场执行全流程。",
+          en: "Led planning and coordination for hackathons and technical workshops as mentor, covering event design, ecosystem building, and on-site execution."
         },
         {
-          zh: "主导外联合作与资源整合，搭建多方协作的科技创新网络。",
-          en: "Led external partnerships and ecosystem coordination to establish a multi-stakeholder innovation network."
+          zh: "参与品牌方赞助商务对接，整合多方资源搭建科技创新生态，推动科技、人文与商业的创新融合。",
+          en: "Participated in sponsor business development and partnerships, integrating resources to build an ecosystem bridging technology, humanity, and business innovation."
+        },
+        {
+          zh: "搭建并运营覆盖上海、北京、深圳、杭州的社群网络，私域用户1.3万+，公域内容曝光200万+。",
+          en: "Built and operated community networks across Shanghai, Beijing, Shenzhen, and Hangzhou with 13,000+ private users and 2M+ content impressions."
         }
       ]
     },
@@ -130,66 +139,53 @@ export const resumeData: ResumeData = {
       },
       highlights: [
         {
-          zh: "带领技术团队构建新一代职业智能导航平台，项目获 WaytoAGI 黑客松一等奖。",
-          en: "Led engineering delivery for a next-generation AI career navigation platform, winning 1st place at WaytoAGI Hackathon."
+          zh: "AI 智能模拟人类行为在浏览器中自动填写网申表单，实现简历润色、生成与一键自动投递功能。",
+          en: "Built AI system that simulates human behavior in browser to automatically fill job application forms, supporting resume optimization, generation, and one-click auto-apply."
+        },
+        {
+          zh: "负责 AI Agent 核心架构搭建，实现浏览器自动化网申插件（调用 Chrome Debug API + LLM），优化职岗匹配。",
+          en: "Architected core AI agent system with browser automation using Chrome Debug API + LLM, optimizing job-position matching."
+        },
+        {
+          zh: "带领技术团队构建新一代职业智能导航平台，服务 500 个种子用户，项目获 WaytoAGI 黑客松一等奖。",
+          en: "Led engineering team to build next-gen AI career platform serving 500 seed users, winning 1st prize at WaytoAGI Hackathon."
         },
         {
           zh: "设计并实现 AI Agent 系统，项目晋级 AI Agent 2025 半决赛。",
-          en: "Designed and implemented the core AI agent architecture, advancing to AI Agent 2025 semifinals."
-        },
-        {
-          zh: "负责全栈架构设计与关键模块开发，覆盖产品从 0 到 1 阶段。",
-          en: "Owned full-stack architecture and core modules across the 0-to-1 product phase."
+          en: "Designed and implemented AI agent system, advancing to AI Agent 2025 semifinals."
         }
       ]
     },
     {
-      id: "rokid",
+      id: "xuanyuan-zhichuang",
       org: {
-        zh: "Rokid",
-        en: "Rokid"
+        zh: "轩辕智创",
+        en: "Xuanyuan Innovation Hub"
       },
       title: {
-        zh: "校园大使",
-        en: "Campus Ambassador"
+        zh: "创始人",
+        en: "Founder"
       },
       period: {
-        zh: "2025.08 - 2026.08",
-        en: "Aug 2025 - Aug 2026"
+        zh: "2023 - 至今",
+        en: "2023 - Present"
       },
       highlights: [
         {
-          zh: "推广 AR/XR 技术在教育和创意场景的应用，协助完成技术传播活动。",
-          en: "Promoted AR/XR applications across education and creative domains through technical outreach."
+          zh: "创办学生创业学习小组，带领团队用项目制方式学习技术、发现真实需求、培养商业嗅觉。",
+          en: "Founded a student entrepreneurship learning group, leading the team to learn technology through projects, discover real needs, and develop business acumen."
         },
         {
-          zh: "参与生态共建并指导学生开展创新项目实践。",
-          en: "Contributed to ecosystem building and mentored students on innovation projects."
-        }
-      ]
-    },
-    {
-      id: "openkylin",
-      org: {
-        zh: "openKylin / OpenAtom",
-        en: "openKylin / OpenAtom"
-      },
-      title: {
-        zh: "社区成员 / 推广大使",
-        en: "Community Contributor / Evangelist"
-      },
-      period: {
-        zh: "2025.07 - 2026.07",
-        en: "Jul 2025 - Jul 2026"
-      },
-      highlights: [
-        {
-          zh: "参与开源社区建设与技术推广，持续贡献项目与文档内容。",
-          en: "Contributed to open-source community operations, technical evangelism, and project documentation."
+          zh: "发现校园原创明信片需求空白，24小时内完成调研、设计、印刷、分发全流程，售出2000+张，收入约3500元。",
+          en: "Identified unmet demand for original campus postcards, completed full-cycle execution from research to distribution in 24 hours, selling 2,000+ copies with ~3,500 yuan revenue."
         },
         {
-          zh: "推动国产操作系统生态传播与开发者协作。",
-          en: "Supported developer collaboration and ecosystem outreach for domestic operating systems."
+          zh: "策划并执行千人规模非遗文化集市活动，统筹活动设计、资源协调与现场运营。",
+          en: "Planned and executed a thousand-person intangible cultural heritage market event, overseeing event design, resource coordination, and on-site operations."
+        },
+        {
+          zh: "推动 AI × 非遗文化创新方向，探索龙狮 IP 陪伴玩具与 XR 皮影戏数字化体验。",
+          en: "Pioneered AI × intangible cultural heritage innovation, exploring lion dance IP companion toys and XR shadow puppetry digital experiences."
         }
       ]
     }
@@ -197,8 +193,9 @@ export const resumeData: ResumeData = {
   projects: [
     {
       id: "xijiayun-glucose-management",
+      section: "代表项目",
       name: {
-        zh: "希家云｜二型“瘦糖”人群血糖管理方案",
+        zh: "希家云｜二型「瘦糖」人群血糖管理方案",
         en: "Xijia Cloud | Glucose Management for Lean Type-2 Users"
       },
       event: {
@@ -215,7 +212,7 @@ export const resumeData: ResumeData = {
       },
       highlights: [
         {
-          zh: "完成 20+ 用户与 5+ 医师/专家的深访，提炼二型“瘦糖”人群在办公场景中的核心控糖痛点。",
+          zh: "完成 20+ 用户与 5+ 医师/专家的深访，提炼二型「瘦糖」人群在办公场景中的核心控糖痛点。",
           en: "Interviewed 20+ users and 5+ experts to identify core glucose-management pain points for lean type-2 users in office contexts."
         },
         {
@@ -233,46 +230,90 @@ export const resumeData: ResumeData = {
         en: "Won Second Prize at the XbotPark Winter Camp Final Demo."
       }
     },
+
     {
-      id: "eth-adhd",
+      id: "cling-word",
+      section: "代表项目",
       name: {
-        zh: "ETH 黑客松 - ADHD 治疗 Web3 应用",
-        en: "ETH Hackathon - Web3 ADHD Therapy Incentive App"
+        zh: "词灵（Cling）智能背单词系统",
+        en: "Cling - AI-Powered Vocabulary Learning System"
       },
       event: {
-        zh: "ETH Hackathon 2025",
-        en: "ETH Hackathon 2025"
+        zh: "词灵（Cling）打造语言学习新范式",
+        en: "Cling - Redefining Language Learning"
       },
       period: {
-        zh: "2025.10.18 - 2025.10.21",
-        en: "Oct 18-21, 2025"
+        zh: "2025.10 - 2025.12",
+        en: "Oct 2025 - Dec 2025"
       },
       role: {
-        zh: "系统设计与全栈实现",
-        en: "System Designer & Full-Stack Developer"
+        zh: "产品与开发",
+        en: "Product & Development"
       },
       highlights: [
         {
-          zh: "设计并开发基于区块链的 ADHD 治疗激励系统。",
-          en: "Built a blockchain-based incentive system for ADHD treatment engagement."
+          zh: "打造无限推词模式和造句学习的智能背英文单词系统，采用 AI 智能组句引擎生成语境化例句。",
+          en: "Built an AI-powered vocabulary learning system with unlimited word-push and sentence-based learning, using AI sentence generation for contextual examples."
         },
         {
-          zh: "通过智能合约实现行为追踪与奖励机制。",
-          en: "Implemented user behavior tracking and reward mechanisms via smart contracts."
+          zh: "通过智能调控与个性化策略，打造符合人脑记忆规律的动态学习体验。",
+          en: "Developed adaptive algorithms that personalize learning strategies based on memory retention patterns."
         },
         {
-          zh: "探索 Web3 与医疗健康场景融合的可行性。",
-          en: "Validated Web3 integration pathways for healthcare use cases."
+          zh: "在小范围视频推广下，获得 1 万+ 用户。",
+          en: "Achieved 10,000+ users through limited video promotion."
         }
       ],
-      stack: ["Web3", "Smart Contract", "Full-Stack", "HealthTech"],
+      stack: ["AI/NLP", "Python", "Mobile App", "Personalization Engine"],
       outcome: {
-        zh: "完成可运行原型并通过赛事评审展示。",
-        en: "Delivered a working prototype and demonstrated it successfully in competition review."
+        zh: "成功获得 1 万+ 用户。",
+        en: "10,000+ users achieved."
       }
     },
+
+    {
+      id: "nomo-platform",
+      section: "代表项目",
+      name: {
+        zh: "NOMO - 开发者一键部署平台",
+        en: "NOMO - One-Click Developer Deployment Platform"
+      },
+      event: {
+        zh: "个人项目",
+        en: "Personal Project"
+      },
+      period: {
+        zh: "2025.12",
+        en: "Dec 2025"
+      },
+      role: {
+        zh: "独立开发者",
+        en: "Solo Developer"
+      },
+      highlights: [
+        {
+          zh: "打造面向开发者的一键部署与托管平台，支持 Git 仓库或 ZIP 上传完成应用上线，兼容 Node.js、Python、Go、Rust 等主流技术栈。",
+          en: "Built a one-click deployment and hosting platform for developers, supporting Git repo or ZIP upload with runtime support for Node.js, Python, Go, and Rust."
+        },
+        {
+          zh: "基于 Coolify 自建部署系统，结合 Supabase 与自研服务，构建完整开发者基础设施（部署、监控、日志、数据库、限流）。",
+          en: "Self-built deployment system on Coolify with Supabase and custom services, providing complete developer infrastructure including deployment, monitoring, logging, database, and rate limiting."
+        },
+        {
+          zh: "目标：消灭 DevOps，让开发者提交代码即可上线。",
+          en: "Mission: eliminate DevOps complexity so developers can ship code with one click."
+        }
+      ],
+      stack: ["Coolify", "Supabase", "DevOps", "Cloud Infrastructure", "Node.js", "Python"],
+      outcome: {
+        zh: "完成可运行原型并完成内测。",
+        en: "Delivered working prototype with internal testing."
+      }
+    },
+
     {
       id: "meow-piano",
+      section: "代表项目",
       name: {
         zh: "《喵喵琴》XR & AI 音乐交互项目",
         en: "Meow Piano - XR & AI Music Interaction"
@@ -305,8 +346,10 @@ export const resumeData: ResumeData = {
         en: "Won 1st place in the WorldRemix XR 2025 overall track."
       }
     },
+
     {
       id: "silent-bridge",
+      section: "代表项目",
       name: {
         zh: "《默语之桥》AI + 硬件公益平台",
         en: "Silent Bridge - AI + Hardware Accessibility Platform"
@@ -339,8 +382,10 @@ export const resumeData: ResumeData = {
         en: "Won 1st place in the REBUILD-Z AI + Hardware track."
       }
     },
+
     {
       id: "jump-mecha",
+      section: "代表项目",
       name: {
         zh: "《跃动机灵》六足机器人开源平台",
         en: "Jump Mecha - Open-Source Hexapod Platform"
@@ -354,8 +399,8 @@ export const resumeData: ResumeData = {
         en: "2025"
       },
       role: {
-        zh: "核心固件与系统架构负责人",
-        en: "Firmware & System Architecture Lead"
+        zh: "步态算法贡献者",
+        en: "Gait Algorithm Contributor"
       },
       highlights: [
         {
@@ -377,74 +422,79 @@ export const resumeData: ResumeData = {
         en: "Received 3rd prize in the REBUILD-Z architecture track."
       }
     },
+
     {
-      id: "heritage-ar",
+      id: "e2e-full-testing",
+      section: "开源项目",
       name: {
-        zh: "《文物探秘》AR & AI 文物识别系统",
-        en: "Cultural Relic Explorer - AR & AI Recognition System"
+        zh: "E2E Full Testing Framework",
+        en: "E2E Full Testing Framework"
       },
       event: {
-        zh: "GOGC 2024 全球开源极客嘉年华",
-        en: "GOGC 2024 Global Open Source Festival"
+        zh: "开源项目",
+        en: "Open Source Project"
       },
       period: {
-        zh: "2024.07",
-        en: "Jul 2024"
+        zh: "2025",
+        en: "2025"
       },
       role: {
-        zh: "AR 系统开发",
-        en: "AR System Developer"
+        zh: "核心开发者",
+        en: "Core Developer"
       },
       highlights: [
         {
-          zh: "使用 Rokid Station Pro 与 Unity/C# 构建文物识别与 AR 讲解系统。",
-          en: "Built an AI-based cultural relic recognition and AR guidance system with Rokid Station Pro and Unity/C#."
+          zh: "打造顶级 E2E 前后端全自动化全量测试框架，支持前端 UI/UX 双端测试、桌面+移动端验收、后端 API 测试（正常+异常+AI接口）。",
+          en: "Built a comprehensive E2E full-stack automated testing framework supporting frontend UI/UX testing, desktop and mobile acceptance, backend API testing, and AI interface testing."
         },
         {
-          zh: "推动项目创意由企业优化并在博物馆场景落地。",
-          en: "Contributed to concept refinement and supported museum-level deployment."
+          zh: "实现 AI 决策/执行能力测试与 HTML 可视化报告，核心理念是「不验证对，只找错」的找茬思维。",
+          en: "Implemented AI decision and execution capability testing with HTML visual reports, centered on the 'find faults, not correctness' philosophy."
         }
       ],
-      stack: ["Unity", "C#", "AR", "AI Recognition"],
+      stack: ["Testing Framework", "Automation", "Python", "API Testing"],
       outcome: {
-        zh: "获 GOGC 最佳实践奖。",
-        en: "Won the GOGC Best Practice Award."
+        zh: "开源项目，GitHub 公开可用。",
+        en: "Open source project available on GitHub."
       }
     },
+
     {
-      id: "blog-platform",
+      id: "opensource-analyzer",
+      section: "开源项目",
       name: {
-        zh: "个人技术博客与校园许愿墙",
-        en: "Personal Tech Blog & Campus Interaction Platform"
+        zh: "Open Source Analyzer",
+        en: "Open Source Analyzer"
       },
       event: {
-        zh: "个人项目",
-        en: "Personal Project"
+        zh: "开源项目",
+        en: "Open Source Project"
       },
       period: {
-        zh: "2021",
-        en: "2021"
+        zh: "2025",
+        en: "2025"
       },
       role: {
-        zh: "独立开发与运维",
-        en: "Solo Developer & Operator"
+        zh: "开发者",
+        en: "Developer"
       },
       highlights: [
         {
-          zh: "独立完成服务器部署、域名绑定与站点运维。",
-          en: "Completed independent server deployment, domain setup, and platform operations."
+          zh: "分析开源代码库学习思路与架构模式，帮助快速切入陌生代码库，建立全局认知、追踪核心路径、理解设计决策。",
+          en: "Analyzed open source codebases to learn patterns and architectures, enabling rapid understanding of unfamiliar codebases with global awareness, core path tracing, and design decision comprehension."
         },
         {
-          zh: "基于 WordPress 构建技术博客与校园互动系统。",
-          en: "Built and maintained a technical blog and campus interaction portal using WordPress."
+          zh: "聚焦高价值模块，从功能点出发深入，实现工程补丁、先跑通代码、理解大型项目的工程实践。",
+          en: "Focused on high-value modules, diving deep from functional points to implement patches, get code running, and understand engineering practices in large projects."
         }
       ],
-      stack: ["Linux", "WordPress", "Server Ops", "Web Development"],
+      stack: ["Code Analysis", "Architecture Patterns", "Documentation"],
       outcome: {
-        zh: "持续稳定运行并支撑校园社区互动。",
-        en: "Maintained stable operation and supported campus community engagement."
+        zh: "开源项目，帮助开发者高效学习开源代码库。",
+        en: "Open source project helping developers efficiently learn from open source codebases."
       }
-    }
+    },
+
   ],
   awards: [
     {
@@ -547,7 +597,15 @@ export const resumeData: ResumeData = {
         zh: "AI 与智能体",
         en: "AI & Agents"
       },
-      skills: ["AI/ML", "AI Agent Design", "Prompt Engineering", "Data Pipelines"]
+      skills: ["AI Agent Design", "RAG", "MCP", "Multi-Agent", "Prompt Engineering", "Vector Database"]
+    },
+    {
+      id: "ai-tools",
+      label: {
+        zh: "AI 开发工具",
+        en: "AI Development Tools"
+      },
+      skills: ["Cursor", "Claude Code", "GitHub Copilot", "MCP Server", "Agent Skills", "Vibe Coding"]
     },
     {
       id: "xr",
@@ -638,6 +696,6 @@ export const resumeData: ResumeData = {
       }
     }
   ],
-  updatedAt: "2026-02-15",
-  version: "Resume v2.1 Editorial"
+  updatedAt: "2026-04-17",
+  version: "Resume v2.2 Editorial"
 };
