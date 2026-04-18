@@ -12,7 +12,7 @@ export const EducationSection = ({ locale, education, languages }: EducationSect
   return (
     <section className={styles.section} data-animate="section">
       <div className={styles.sectionHeading}>
-        <p className={styles.sectionIndex}>05</p>
+        <p className={styles.sectionIndex}>06</p>
         <h3>{locale === "zh" ? "教育与语言" : "Education & Languages"}</h3>
       </div>
 

@@ -11,7 +11,7 @@ export const SkillsSection = ({ locale, groups }: SkillsSectionProps) => {
   return (
     <section className={styles.section} data-animate="section">
       <div className={styles.sectionHeading}>
-        <p className={styles.sectionIndex}>04</p>
+        <p className={styles.sectionIndex}>05</p>
         <h3>{locale === "zh" ? "技能矩阵" : "Skills Matrix"}</h3>
       </div>
       <div className={styles.skillGrid}>

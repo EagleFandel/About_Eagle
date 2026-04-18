@@ -51,11 +51,17 @@ export const ResumeHeader = ({ basics, locale, mode }: ResumeHeaderProps) => {
           <h2>{resolveResumeText(basics.headline, locale)}</h2>
           <p className={styles.contactLine}>
             <a href={`mailto:${basics.email}`}>{basics.email}</a>
+            {basics.email2 && (
+              <>
+                <span> | </span>
+                <a href={`mailto:${basics.email2}`}>{basics.email2}</a>
+              </>
+            )}
             <span> | </span>
             <a href={`tel:${basics.phone.replace(/\s+/g, "")}`}>{basics.phone}</a>
             <span> | </span>
             <a href={basics.github} target="_blank" rel="noreferrer">
-              GitHub
+              {basics.github}
             </a>
             <span> | </span>
             <span>{resolveResumeText(basics.location, locale)}</span>
