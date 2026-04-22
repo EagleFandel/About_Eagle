@@ -59,7 +59,7 @@ export const ImpactAwardsSection = () => {
         </div>
         <div className="timeline">
           {awardsTimeline.map((award) => (
-            <article className="timeline-item" key={`${award.year}-${award.title.en}`}>
+            <article className="timeline-item" key={award.id}>
               <p className="timeline-year">{award.year}</p>
               <h3>{resolveText(award.title)}</h3>
               <p>{resolveText(award.detail)}</p>

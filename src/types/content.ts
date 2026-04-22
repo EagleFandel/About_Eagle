@@ -8,6 +8,7 @@ export interface LocalizedText {
 export interface ProjectCard {
   id: string;
   title: LocalizedText;
+  meta?: LocalizedText;
   role: LocalizedText;
   impact: LocalizedText;
   award?: LocalizedText;

@@ -21,14 +21,28 @@ export const CollabCTASection = () => {
           <MagneticButton className="secondary-button" href="/resume">
             {locale === "zh" ? "查看简历 / Resume" : "View Resume"}
           </MagneticButton>
-          <p className="email-inline">{profile.email}</p>
         </div>
-        <div className="social-placeholder">
-          <span>{locale === "zh" ? "在线链接" : "Online links"}</span>
-          <ul>
+        <div className="contact-card">
+          <span>{locale === "zh" ? "联系方式" : "Contact"}</span>
+          <ul className="contact-list">
             <li>
+              <span>Email</span>
+              <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            </li>
+            {profile.email2 ? (
+              <li>
+                <span>Email 2</span>
+                <a href={`mailto:${profile.email2}`}>{profile.email2}</a>
+              </li>
+            ) : null}
+            <li>
+              <span>Phone</span>
+              <a href={`tel:${profile.phone.replace(/[^\d+]/g, "")}`}>{profile.phone}</a>
+            </li>
+            <li>
+              <span>GitHub</span>
               <a href={profile.github} target="_blank" rel="noreferrer">
-                GitHub / EagleFandel
+                EagleFandel
               </a>
             </li>
           </ul>

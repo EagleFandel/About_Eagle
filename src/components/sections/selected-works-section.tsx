@@ -69,6 +69,7 @@ export const SelectedWorksSection = () => {
             <article className="work-card" key={project.id}>
               <div className="work-index">{String(index + 1).padStart(2, "0")}</div>
               <h3>{resolveText(project.title)}</h3>
+              {project.meta ? <p className="work-meta">{resolveText(project.meta)}</p> : null}
               <p className="work-role">{resolveText(project.role)}</p>
               <p className="work-impact">{resolveText(project.impact)}</p>
               {project.award ? <p className="work-award">{resolveText(project.award)}</p> : null}

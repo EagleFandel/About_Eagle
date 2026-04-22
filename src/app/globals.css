@@ -338,6 +338,15 @@ a {
   letter-spacing: 0.12em;
 }
 
+.work-meta {
+  margin: -0.2rem 0 0;
+  color: var(--accent-steel);
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
 .work-impact {
   margin: 0.25rem 0 0;
   font-size: clamp(1rem, 2.1vw, 1.28rem);
@@ -595,50 +604,50 @@ a {
   gap: 0.8rem;
 }
 
-.email-inline {
-  margin: 0;
-  font-family: var(--font-mono), "IBM Plex Mono", monospace;
-  letter-spacing: 0.08em;
-  color: var(--accent-steel);
-  font-size: 0.82rem;
-}
-
-.social-placeholder {
+.contact-card {
   margin-top: 0.2rem;
   border: 1px dashed rgba(95, 126, 147, 0.42);
   border-radius: 0.9rem;
   padding: 1rem;
 }
 
-.social-placeholder span {
+.contact-card > span {
   font-size: 0.8rem;
   color: var(--accent-steel);
 }
 
-.social-placeholder ul {
+.contact-list {
   margin: 0.7rem 0 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.6rem;
   padding: 0;
+  display: grid;
+  gap: 0.5rem;
 }
 
-.social-placeholder li {
-  padding: 0.38rem 0.58rem;
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.58rem 0.72rem;
   border: 1px solid rgba(95, 126, 147, 0.35);
-  border-radius: 999px;
+  border-radius: 0.62rem;
   font-family: var(--font-mono), "IBM Plex Mono", monospace;
   font-size: 0.74rem;
 }
 
-.social-placeholder a {
-  color: var(--ink-700);
-  text-decoration: none;
+.contact-list li > span {
+  color: var(--accent-steel);
 }
 
-.social-placeholder a:hover {
+.contact-list a {
+  color: var(--ink-700);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.contact-list a:hover {
   text-decoration: underline;
 }
 
@@ -719,7 +728,7 @@ a {
   .cta-layout h2,
   .cta-line,
   .cta-actions,
-  .social-placeholder {
+  .contact-card {
     grid-column: 1 / span 12;
   }
 
@@ -794,6 +803,28 @@ a {
 
   .roles-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cta-layout .section-kicker,
+  .cta-layout h2,
+  .cta-line,
+  .cta-actions,
+  .contact-card {
+    grid-column: 1 / -1;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .contact-list li {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-list a {
+    width: 100%;
+    text-align: left;
   }
 }
 

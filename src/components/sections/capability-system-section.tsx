@@ -61,8 +61,8 @@ export const CapabilitySystemSection = () => {
       </div>
       <div className="capability-layout content-grid">
         <div className="capability-core">
-          <span>AI + XR</span>
-          <span>ENGINEERING</span>
+          <span>AI AGENTS</span>
+          <span>PRODUCT SYSTEMS</span>
         </div>
         <svg viewBox="0 0 1000 420" className="capability-lines" aria-hidden>
           <line className="cap-link" x1="500" y1="210" x2="130" y2="85" />
