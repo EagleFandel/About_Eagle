@@ -585,7 +585,7 @@ a {
 .cta-layout h2,
 .cta-line,
 .cta-actions,
-.social-placeholder {
+.contact-card {
   grid-column: 3 / span 8;
 }
 
